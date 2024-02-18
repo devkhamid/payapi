@@ -1,0 +1,120 @@
+/* public-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/public-sans-v15-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* public-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/public-sans-v15-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-family: 'Public-sans', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0px 30px;
+  margin: 0px auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+header {
+  background-color: #EDF3F8;
+}
+
+.header-div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+navbar {
+  
+}
+
+.header-list {
+  list-style: none;
+  display:flex;
+  align-items: center;
+
+}
+
+.header-list li {
+  padding-right: 30px;
+}
+
+.header-list li a {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  color: #36536b;
+}
+
+.header-button {
+
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: #fbfcfe;
+  border: none;
+  width: 173px;
+  height: 48px;
+  border-radius: 24px;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  background: #ba4270;
+}
+
+.menu-button {
+  cursor: pointer;
+  display: none;
+  border: none;
+}
+
+@media only screen and (max-width: 620px) {
+  navbar {
+    display: none;
+  }
+
+  .header-button {
+    display: none;
+  }
+  .menu-button {
+    display: inline-block;
+  }
+
+}
